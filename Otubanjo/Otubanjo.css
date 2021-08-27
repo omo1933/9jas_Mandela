@@ -75,7 +75,7 @@ button a.active {
     background-size: cover; 
     width: 270px;
     height: auto;
-    background-image: url(./grad.png)
+    background-image: url(./grad.png);
     align-items: center;
     justify-content: space-around; 
   }
