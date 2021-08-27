@@ -11,7 +11,9 @@ header{
 }
 
 main{
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -22,7 +24,7 @@ button{
     font-size: 20px;
     cursor: pointer;
     border-radius: 16px
-    display: flex;
+    
     
 }
 
