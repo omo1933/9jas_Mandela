@@ -78,11 +78,13 @@ nav button input[type=text] {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) and (min-resolution: 150dpi){
   body {
     font-size: 12px;
     background-size: cover; 
     width: 270px;
     height: auto;
+    background-image: url(./grad.png)
   }
 }
+
