@@ -76,6 +76,8 @@ button a.active {
     width: 270px;
     height: auto;
     background-image: url(./grad.png)
+    align-items: center;
+    justify-content: space-around; 
   }
 }
 
