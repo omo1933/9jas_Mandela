@@ -18,6 +18,7 @@ nav {
   margin-top: auto;
   margin-bottom: auto;
   width: 8em
+  justify-content: center;
 }
 
 nav button{
