@@ -20,6 +20,7 @@ nav {
   width: 8em;
   justify-content: space-around;
   align-items: center;
+  display:flex;
 }
 
 nav button{
