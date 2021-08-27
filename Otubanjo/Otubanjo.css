@@ -23,12 +23,11 @@ nav {
 }
 
 nav button{
-    background-color:#0e416b;
-    margin: 5px;
-    opacity: 85%;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 16px
+  display: inline-block;
+  margin-right: 25px;
+  text-align: center;
+  background-color: #28587B; 
+  border-radius: 5px; 
 }
 
 /* Style the links inside the navigation bar */
