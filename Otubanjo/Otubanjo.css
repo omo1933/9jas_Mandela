@@ -10,13 +10,20 @@ header{
   margin-bottom: 500px;
 }
 
- button{
+main{
+    align-items: center;
+}
+
+
+button{
     background-color:#0e416b;
     margin: 5px;
     opacity: 85%;
     font-size: 20px;
     cursor: pointer;
     border-radius: 16px
+    display: flex;
+    
 }
 
 /* Style the links inside the navigation bar */
