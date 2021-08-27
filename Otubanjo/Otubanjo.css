@@ -77,3 +77,9 @@ nav button input[type=text] {
     border: 1px solid #ccc;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
