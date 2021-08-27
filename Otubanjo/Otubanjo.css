@@ -17,6 +17,8 @@ nav {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
+  width: 100%;
+  font-size: 8em;
 }
 
 nav button{
