@@ -11,12 +11,6 @@ header{
 }
 /* Add a black background color to the top navigation bar */
 nav {
-  overflow: hidden;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
   width: 8em;
   justify-content: space-around;
   align-items: center;
