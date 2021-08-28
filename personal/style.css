@@ -1,3 +1,4 @@
+html, body {min-height: 100%;}
 body{
  background-color: lightgray;
   height: 100%;
@@ -12,7 +13,7 @@ h1{
     width: 100%;
     display: grid;
     grid-template-columns: 25% 25% 24.5% 24.5% 25% 23% ;
-    grid-template-rows: 52px 500px 150px 50px;
+    grid-template-rows: 52px 500px 300px 1000px 200px;
     grid-row-gap: 10px;
     grid-column-gap: 3px;
     width: 100vw;
@@ -93,21 +94,35 @@ h1{
   width: 100%;
   }
 
-  .e{
-    background-image:url("./project.jpg");
-    max-width: 100%;
-    height: auto;
-    background-size: cover; 
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  }
-  
-  .g {
+  .box.e{
     grid-column-start: 1;
     grid-column-end: span 4;
     grid-row-start: 4;
     grid-row-end: 4;
+    background-color: white;
+    
+  }
+
+  .e h1{
+      font-size: 50px;
+      font-weight: 700;
+      font-family: Garamond, 'Times New Roman', Times, serif;
+      text-align: center;
+  }
+
+  .e p{
+    font-size: 35px;
+    font-weight: 100;
+    font-family: 'Brush Script MT', 'Times New Roman', Times, serif;
+    text-align:justify;
+
+}
+  
+  .g {
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
     background-color: #333;
     text-align: center;
 }
@@ -150,6 +165,7 @@ h1{
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
+        font: size 24px;
       }
       
       /* Change the link color to #111 (black) on hover */
@@ -157,18 +173,7 @@ h1{
         background-color: #111;
       }
 
-      @media screen and (max-width:480px) and (max-height:640px) and (orientation:potrait){
-
-        .grid {
-            height: 100%;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 25% 25% 24.5% 24.5% 25% 23% ;
-            grid-template-rows: 65px 600px 200px 600px;
-            grid-row-gap: 10px;
-            grid-column-gap: 3px;
-            width: 100vw;
-            height: 100vh;
-          }
-          
+      video {
+        display: block;
+        margin: auto;
       }
