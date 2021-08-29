@@ -123,6 +123,13 @@ h1{
     grid-column-end: span 4;
     grid-row-start: 5;
     grid-row-end: 5;
+   background-image:url("./footer.jpg");
+        max-width: 100%;
+        height: auto;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
    
   }
 }
@@ -181,13 +188,6 @@ h1{
        footer ul {
         list-style-type: none;
         overflow: hidden; 
-        background-image:url("./footer.jpg");
-        max-width: 100%;
-        height: auto;
-        background-size: cover; 
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
       }
 
  .footerList a {
