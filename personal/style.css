@@ -187,6 +187,8 @@ h1{
 
 
 footer {
-    justify-items: center;
+    display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-items: center;
 
     }
