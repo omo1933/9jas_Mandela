@@ -123,13 +123,14 @@ h1{
     grid-column-end: span 4;
     grid-row-start: 5;
     grid-row-end: 5;
-    background-color: #333;
+    background-image:url("./footer.jpg");
     max-width: 100%;
     height: auto;
     background-size: cover; 
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
+  }
 }
 
     button{
@@ -198,12 +199,4 @@ h1{
         font: size 24px;
       }
 
-footer{
-    background-image:url("./footer.jpg");
-    max-width: 100%;
-    height: auto;
-    background-size: cover; 
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-  }
+
