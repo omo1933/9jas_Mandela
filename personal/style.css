@@ -132,7 +132,7 @@ h1{
     width: 100%;
 }
 
-    nav button{
+    button{
         margin-right: 5px;
         text-align: center;
         background-color:lightgrey; 
@@ -142,7 +142,7 @@ h1{
 
       }
 
-      nav button a {
+      button a {
         float: center;
         display: block;
         color: black;
@@ -160,18 +160,11 @@ h1{
         background-color: #333;
       }
       
-      footer{
-          display: block;
-          margin: auto;
-          
-       }
-
-      
-      nav ul li {
+      .navItems {
         float: left;
       }
       
-      nav ul li a {
+      .navItems a {
         display: block;
         color: white;
         text-align: center;
@@ -181,7 +174,7 @@ h1{
       }
       
       /* Change the link color to #111 (black) on hover */
-      li a:hover {
+      .navItems a:hover {
         background-color: #111;
       }
 
@@ -189,5 +182,18 @@ h1{
         display: block;
         margin: auto;
       }
+       
+       footer ul {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #333;
+      }
 
-
+ .footerList a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font: size 24px;
+      }
