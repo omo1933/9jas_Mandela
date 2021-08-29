@@ -186,9 +186,3 @@ h1{
       }
 
 
-footer li a{
-    display: grid;
-  grid-template-columns: repeat(3, 400px);
-  justify-items: center;
-
-    }
