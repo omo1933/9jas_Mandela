@@ -5,6 +5,28 @@
     <link rel='stylesheet' href='style.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/afd48ce080.js"></script>
+    <script type="text/javascript">
+  // Wait for document to load
+  document.addEventListener("DOMContentLoaded", function(event) {
+    document.documentElement.setAttribute("data-theme", "light");
+
+    // Get our button switcher
+    var themeSwitcher = document.getElementById("theme-switcher");
+
+    // When our button gets clicked
+    themeSwitcher.onclick = function() {
+      // Get the current selected theme, on the first run
+      // it should be `light`
+      var currentTheme = document.documentElement.getAttribute("data-theme");
+
+      // Switch between `dark` and `light`
+      var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+
+      // Set our currenet theme to the new one
+      document.documentElement.setAttribute("data-theme", switchToTheme);
+    }
+  });
+  </script>
 </head>
 <body>
     <div class="grid">
@@ -19,6 +41,7 @@
                     </li>
                 </ul>
             </nav>
+            <button id="theme-switcher">Switch themes!</button>
         </div>
         <div class="box c"></div>
         <div class="box d"> </div>
