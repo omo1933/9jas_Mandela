@@ -13,8 +13,8 @@
         <link rel="stylesheet" href="testagent.css">
     </head>
     <body>
-      <header style="text-align: center;"><h1 style="color:white;">PAG AGENT TEST SITE </h1></header>
-      <div style="text-align: center"><h2 style="color:white;">Fill out the form below to allocate an address:</h2></div>
+      <header style="text-align: center;"><h1>PAG AGENT TEST SITE </h1></header>
+      <div style="text-align: center"><h2 id="statement">Fill out the form below to allocate an address:</h2></div>
         <form id="selectform" target="_blank" action='https://agent.tritechsoft.com/AllocatorAgent/service.asmx/AllocateAddress' method="post" enctype="text/xml"> 
             <div>
               <label for="CompanyID">Company ID:</label>
@@ -49,7 +49,7 @@
                 <input type="date" name="EffectiveDate" id="EffectiveDate" required>
               </div>
             <div>
-              <button>Allocate</button><button onclick="document.getElementById('selectform').reset();">
+              <button id="allocate">Allocate</button><button onclick="document.getElementById('selectform').reset();">
                 Reset
             </button>
             </div>
