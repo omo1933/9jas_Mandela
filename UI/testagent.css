@@ -1,0 +1,62 @@
+body {
+  font: 1.3rem sans-serif;
+  padding: 0.5em;
+  margin: 0;
+  background: rgb(59, 42, 40) url(agent.jpeg) no-repeat center center fixed;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  font-family: Garamond, "Times New Roman", serif;
+}
+
+form {
+  color: rgb(253, 253, 253);
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  padding: 2em;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input {
+  background-color: #dae2ec;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+input:hover {
+  background-color: #4daec8;
+  margin-bottom: 10px;
+}
+
+label {
+  color: black;
+  font-family: Garamond, "Times New Roman", serif;
+}
+
+button {
+  background-color: #169cc5;
+  color: black;
+  font-size: 20px;
+  font-family: Garamond, "Times New Roman", serif;
+  width: 250px;
+}
+
+button:hover {
+  background-color: #010d11;
+  color: antiquewhite;
+  font-size: 20px;
+  width: 250px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
