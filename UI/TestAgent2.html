@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="testagent2.css">
+    </head>
+    <body>
+      <header style="text-align: center;"><h1>PAG AGENT TEST SITE </h1></header>
+      <div style="text-align: center"><h2 id="statement">Fill out the form below to allocate an address:</h2></div>
+        <form id="selectform" target="_blank" action='https://api.agent.tritechsoft.com/////AllocatorAgent/Service.asmx' method="get" enctype="text/xml"> 
+            <div>
+              <label for="CompanyID">Company ID:</label>
+              <input name="CompanyID" id="CompanyID" required >
+            </div>
+            <div>
+              <label for="Password">Password:</label>
+              <input type ="password" name="Password" id="Password" required>
+            </div>
+            <div>
+                <label for="SourceStreet">Street:</label>
+                <input name="SourceStreet" id="SourceStreet" required>
+              </div>
+              <div>
+                <label for="SourceCity">City:</label>
+                <input name="SourceCity" id="SourceCity" required>
+              </div>
+              <div>
+                <label for="SourceState">State:</label>
+                <input name="SourceState" id="SourceState" required>
+              </div>
+              <div>
+                <label for="SourceZipCode">Zip Code:</label>
+                <input name="SourceZipCode" id="SourceZipCode" required>
+              </div>
+              <div>
+                <label for="LineOfBusiness">LOB:</label>
+                <input name="LineOfBusiness" id="LineOfBusiness" required>
+              </div>
+              <div>
+                <label for="EffectiveDate">Effective Date:</label>
+                <input type="date" name="EffectiveDate" id="EffectiveDate" required>
+              </div>
+            <div>
+              <button id="allocate">Allocate</button><button onclick="document.getElementById('selectform').reset();">
+                Reset
+            </button>
+            </div>
+          </form>
+          <div class="footer">
+            <p>This page is used just for testing purposes. It is not the actual UI for Stratus Agent</p>
+          </div>
+    </body>
+</html>
