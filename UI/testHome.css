@@ -40,3 +40,22 @@
     font-size: 18px;
   }
 }
+
+/* The animation code */
+@keyframes example {
+  from {
+    color: red;
+  }
+  to {
+    color: blue;
+  }
+}
+
+span#oneWord {
+  width: 100px;
+  height: 100px;
+  color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
