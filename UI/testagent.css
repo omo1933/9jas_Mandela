@@ -2,7 +2,7 @@ body {
   font: 1.3rem sans-serif;
   padding: 0.5em;
   margin: 0;
-  background: rgb(59, 42, 40) url(agent.jpeg) no-repeat center center fixed;
+  background: #CAAFAF url(agent.jpeg) no-repeat center center fixed;
   background-size: 100%;
   width: 100%;
   height: 100%;
