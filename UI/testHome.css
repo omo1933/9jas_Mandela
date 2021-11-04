@@ -44,7 +44,7 @@
 /* The animation code */
 @keyframes example {
   from {
-    color: red;
+    color: #575757;
   }
   to {
     color: blue;
@@ -54,7 +54,7 @@
 span#oneWord {
   width: 100px;
   height: 100px;
-  color: red;
+  color: #575757;
   animation-name: example;
   animation-duration: 4s;
   animation-iteration-count: infinite;
