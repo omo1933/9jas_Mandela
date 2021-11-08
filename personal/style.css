@@ -1,0 +1,222 @@
+html, body {min-height: 100%;}
+
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+}
+
+[data-theme="dark"] {
+  --background-color: #3F3F3F;
+  --text-color: #fff;
+}
+
+
+body{
+  background-color: var(--background-color);
+  color: var(--text-color);
+  height: 100%;
+  width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+.grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 24.5% 24.5% 25% 23% ;
+    grid-template-rows: 52px 500px 300px 1100px 100px;
+    grid-row-gap: 10px;
+    grid-column-gap: 3px;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .box {
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    
+  }
+  
+  .a {
+    background-color:gray;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    max-width: 100%;
+    height: auto;
+    background-size: cover; 
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  }
+
+  .c{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+  }
+
+  .d {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: span 2;
+  }
+  .b{
+    background-color: #333;
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    max-width: 100%;
+    height: auto;
+    background-size: cover; 
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  }
+
+  .b p{
+      color: green;
+  }
+
+  .c{
+    background-image:url("./Linkedin.jpg");
+    max-width: 100%;
+    height: auto;
+    background-size: cover; 
+  background-repeat: no-repeat;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  }
+
+  .d{
+    background-image:url("./grad.png");
+    max-width: 100%;
+    height: auto;
+    background-size: cover; 
+  background-repeat: no-repeat;
+  background-color:white;
+  height: 100%;
+  width: 100%;
+  }
+
+  .box.e{
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    background-color: white;
+    
+  }
+
+  .e h1{
+      font-size: 50px;
+      font-weight: 700;
+      font-family: Garamond, 'Times New Roman', Times, serif;
+      text-align: center;
+  }
+
+  .e p{
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Brush Script MT', 'Times New Roman', Times, serif;
+    text-align:justify;
+
+}
+  
+  .g {
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
+   background-image:url("./footer.jpg");
+        max-width: 100%;
+        height: auto;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+   
+  }
+}
+
+    button {
+        margin-right: 5px;
+        text-align: center;
+        background-color: black; 
+        border-radius: 50%; 
+        line-height:normal;
+    vertical-align:bottom;
+
+      }
+
+      button a {
+        float: center;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      .navItems {
+        float: left;
+      }
+      
+      .navItems a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font: size 24px;
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+      .navItems a:hover {
+        background-color: #111;
+      }
+
+      video {
+        display: block;
+        margin: auto;
+      }
+       
+       footer ul {
+        list-style-type: none;
+        overflow: hidden; 
+        background-image:url("./footer.jpg");
+        max-width: 100%;
+        height: auto;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+      }
+
+ .footerList a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font: size 24px;
+      }
+
+
