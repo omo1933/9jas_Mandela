@@ -1,4 +1,107 @@
+
+make this better
+ChatGPT
+Certainly! Could you please provide more context or details about what you need improved?
+
 <!DOCTYPE html>
+<html>
+  <head>
+    <title>Mandela's Resume</title>
+    <link rel="stylesheet" href="Otubanjo.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <nav>
+        <button type="button">
+          <a href="./Oluwaseun-Otubanjo.pdf" target="_blank">Resume</a>
+        </button>
+        <br />
+        <button type="button">
+          <a href="https://www.linkedin.com/in/9jasmandela/" target="_blank"
+            >Linkedin</a
+          ></button
+        ><br />
+        <button>
+          <a
+            href="https://nsuworks.nova.edu/cgi/viewcontent.cgi?article=4367&context=tqr"
+            target="_blank"
+            >Research</a
+          ></button
+        ><br />
+        <button type="button">
+          <a href="https://github.com/omo1933/omo1933.github.io" target="_blank">Projects</a></button
+        ><br />
+        <button type="button">
+          <a href="https://asobymarci.com" target="_blank">Shop</a></button
+        ><br />
+        </nav>
+    </main>
+      
+  </body>
+</html>
+ChatGPT
+Sure, here are a few improvements to enhance the HTML code:
+
+Semantic HTML: Use more meaningful tags and structure.
+Accessibility: Improve accessibility by adding attributes like aria-label.
+CSS Improvement: Add inline styles for better visual appearance (though it's better to do this in your Otubanjo.css file).
+Best Practices: Ensure valid HTML by properly closing tags and using consistent formatting.
+Here's an improved version:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mandela's Resume</title>
+    <link rel="stylesheet" href="Otubanjo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mandela's Resume</h1>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li>
+            <a href="./Oluwaseun-Otubanjo.pdf" target="_blank">Resume</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/9jasmandela/" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://nsuworks.nova.edu/cgi/viewcontent.cgi?article=4367&context=tqr"
+              target="_blank"
+              >Research</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/omo1933/omo1933.github.io" target="_blank">Projects</a>
+          </li>
+          <li>
+            <a href="https://asobymarci.com" target="_blank">Shop</a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>
+Changes made:
+
+Added lang="en" attribute for language specification.
+Added meta charset="UTF-8" and meta name="viewport" for better responsiveness.
+Used an unordered list <ul> for the navigation links, which is more semantically appropriate.
+Removed the button tags wrapping the links, as buttons are not necessary here.
+Ensured proper and consistent HTML indentation for readability.
+For a better visual appearance, consider improving your Otubanjo.css file. If you need help with CSS, let me know!
+
+make better: <!DOCTYPE html>
 <html>
 
 <head>
@@ -22,10 +125,10 @@
     // When our button gets clicked
     themeSwitcher.onclick = function() {
       // Get the current selected theme, on the first run
-      // it should be `light`
+      // it should be light
       var currentTheme = document.documentElement.getAttribute("data-theme");
 
-      // Switch between `dark` and `light`
+      // Switch between dark and light
       var switchToTheme = currentTheme === "dark" ? "light" : "dark"
 
       // Set our currenet theme to the new one
@@ -72,6 +175,77 @@
     </div>
     </div>
 
+</body>
+
+</html>
+ChatGPT
+Here's an improved version of your HTML:
+
+Semantic HTML: Improved use of semantic tags like <header>, <main>, and <footer>.
+JavaScript: Consolidated and cleaned up the theme switching code.
+CSS: Fixed inline style issues and ensured proper use of classes.
+Accessibility: Added ARIA labels and improved accessibility.
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandela's Resume</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/afd48ce080.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(event) {
+        document.documentElement.setAttribute("data-theme", "light");
+
+        var themeSwitcher = document.getElementById("theme-switcher");
+        themeSwitcher.onclick = function() {
+          var currentTheme = document.documentElement.getAttribute("data-theme");
+          var switchToTheme = currentTheme === "dark" ? "light" : "dark";
+          document.documentElement.setAttribute("data-theme", switchToTheme);
+          themeSwitcher.innerText = switchToTheme === "dark" ? "Light Mode" : "Dark Mode";
+        }
+      });
+    </script>
+</head>
+
+<body>
+    <div class="grid">
+        <header class="box a">
+            <nav>
+                <ul>
+                    <li class="navItems"><a href="./Oluwaseun-Otubanjo.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> Resume</a></li>
+                    <li class="navItems"><a href="https://www.linkedin.com/in/9jasmandela/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
+                    <li class="navItems"><a href="https://nsuworks.nova.edu/cgi/viewcontent.cgi?article=4367&context=tqr" target="_blank"><i class="fa fa-book" aria-hidden="true"></i> Research</a></li>
+                    <li class="navItems"><a href="https://github.com/omo1933/omo1933.github.io" target="_blank"><i class="fa fa-folder-open" aria-hidden="true"></i> Projects</a></li>
+                    <li><button id="theme-switcher" style="background-color: black; color: white">Dark Mode</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="box e">
+            <h1>About Me</h1>
+            <p>My Name is Mandela Otubanjo. I was born in Nigeria. I moved to the United States when I was a teenager. Academically, I hold several degrees with the most recent being a PhD. in Educational Psychology. I currently work as a QA developer for a software development company. In my spare time, I love to watch reality television and sports. My favorite sports teams are the Philadelphia Eagles and the Dallas Mavericks. For reality television, I love the ones with a little drama.</p>
+            <br>
+            <p style="text-align: center;">While on my page, please enjoy the video below:</p>
+            <br>
+            <video controls width="350" height="400">
+                <source src="./MilliSeun.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </main>
+
+        <footer class="box g">
+            <ul>
+                <li class="footerList"><a href="http://www.poshmark.com/closet/omo1933"><img src="http://poshmark.com/assets/widgets/shop_my_closet_small.png" width="100"></a></li>
+                <li class="footerList"><a href="mailto:omo1933@gmail.com"><i class="fa fa-envelope" style="font-size:24px; color:white"></i> Email</a></li>
+                <li class="footerList"><a href="https://asobymarci.com" target="_blank"><i class="fa fa-shopping-cart" style="font-size:24px; color: white"></i> Aso By Marci</a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 
 </html>
