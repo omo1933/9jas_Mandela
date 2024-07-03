@@ -59,7 +59,7 @@ h1 {
 }
 
 .box {
-  background-color: var(--background-color);
+  background-color: #414111;
   color: var(--text-color);
   border-radius: 5px;
   padding: 10px;
@@ -89,7 +89,7 @@ h1 {
 }
 
 .navItems a, .footerList a {
-  color: #4D4D4D;
+  color: white;
   text-decoration: none;
   padding: 10px 20px;
   display: inline-block;
